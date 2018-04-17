@@ -45,22 +45,14 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>Broker_Compact</compactLayoutAssignment>
-    <compactLayouts>
-        <fullName>Broker_Compact</fullName>
-        <fields>Name</fields>
-        <fields>Title__c</fields>
-        <fields>Phone__c</fields>
-        <fields>Mobile_Phone__c</fields>
-        <fields>Email__c</fields>
-        <label>Broker Compact</label>
-    </compactLayouts>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>false</enableActivities>
+    <description>These are the person accounts for Sigillus</description>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
-    <enableReports>false</enableReports>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
@@ -70,72 +62,59 @@
         <externalId>false</externalId>
         <label>Email</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Mobile_Phone__c</fullName>
+        <fullName>price__c</fullName>
         <externalId>false</externalId>
-        <label>Mobile Phone</label>
+        <label>price</label>
+        <precision>17</precision>
         <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Phone</type>
+        <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Phone__c</fullName>
+        <fullName>quantity__c</fullName>
         <externalId>false</externalId>
-        <label>Phone</label>
+        <label>quantity</label>
+        <precision>18</precision>
         <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Phone</type>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Picture_IMG__c</fullName>
+        <fullName>total_price__c</fullName>
         <externalId>false</externalId>
-        <formula>IMAGE( Picture__c , &quot;picture&quot; , 150, 150)</formula>
+        <formula>quantity__c *  price__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Picture</label>
+        <label>total price</label>
+        <precision>18</precision>
         <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Currency</type>
     </fields>
-    <fields>
-        <fullName>Picture__c</fullName>
-        <externalId>false</externalId>
-        <label>Picture</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Url</type>
-    </fields>
-    <fields>
-        <fullName>Title__c</fullName>
-        <externalId>false</externalId>
-        <label>Title</label>
-        <length>30</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <label>Broker</label>
+    <label>Clients</label>
     <listViews>
         <fullName>All</fullName>
-        <columns>NAME</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
-    <listViews>
-        <fullName>All1</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
     <nameField>
-        <label>Broker Name</label>
+        <label>Client Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Brokers</pluralLabel>
+    <pluralLabel>Clients</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
