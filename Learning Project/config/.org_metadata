@@ -285,6 +285,16 @@
                                 "leaf": true,
                                 "checked": false,
                                 "level": 4,
+                                "text": "Closure_Day__c",
+                                "title": "Closure_Day__c",
+                                "isFolder": false,
+                                "id": "CustomObject.Account.fields.Closure_Day__c",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
                                 "text": "CustomerPriority__c",
                                 "title": "CustomerPriority__c",
                                 "isFolder": false,
