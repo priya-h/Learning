@@ -1,0 +1,13 @@
+{
+    "projectName": "Learning Project",
+    "username": "priyanshabarnwal@gmail.com",
+    "id": "6f812950-418d-11e8-9d5b-6ff51178558b",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://testtechm-dev-ed.my.salesforce.com",
+    "workspace": "/Users/priyansha.himanshu/Documents/Work/GITHUB",
+    "subscription": [
+        "CustomObject"
+    ]
+}
